@@ -1,15 +1,7 @@
-<project name="HelloWorld" default="compile" basedir=".">
-    <description>
-        Simple project to compile Java code
-    </description>
 
-    <!-- Set the source and output directories -->
-    <property name="src.dir" value="src"/>
-    <property name="build.dir" value="build"/>
-
-    <!-- Define the compile target -->
-    <target name="compile">
-        <mkdir dir="${build.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${build.dir}"/>
-    </target>
+<?xml version="1.0"?>
+<project name="Hello World Project" default="info">
+<target name="info">
+<echo>Hello World - Welcome to Ant integration</echo>
+</target>
 </project>
